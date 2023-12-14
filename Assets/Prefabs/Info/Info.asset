@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734ff27e0b17ef143a6284e78d4ec25a, type: 3}
+  m_Name: Info
+  m_EditorClassIdentifier: 
+  coins: 0
+  pocketCoins: 1441
+  maxHealth: 100
+  damage: 15
+  speed: 5
+  swordsSelected: 0
+  haveSteelSword: 1
+  haveGlorySword: 0
+  haveHeal: 1
+  healRate: 5
+  healSkillTime: 6.5
+  haveBarrier: 1
+  reduceDamage: 15
+  barrierSkillTime: 6.5
+  haveFireSlash: 1
+  fireSlashDamage: 1
+  fireSkillTime: 5
