@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
 
                 enemiesSpawns[i].InstantiateObjectsAtRandomPoints();
 
-                if (timeCount >= 0.15f)
+                if (timeCount >= 0.05f)
                 {
                     timeCount = 0;
                     startWave = false;

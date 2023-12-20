@@ -18,60 +18,16 @@ public class SaveManager : MonoBehaviour
     private void Start() 
     {
         LoadGameSetting();
+        LoadGame();
     }
 
     private void Update()
     {
-        saveData.maxHealth = info.maxHealth;
-        saveData.damage = info.damage;
-        saveData.speed = info.speed;
-
-        saveData.swordsSelected = info.swordsSelected;
-        saveData.haveSteelSword = info.haveSteelSword;
-        saveData.haveGlorySword = info.haveGlorySword;
-
-        saveData.haveHeal = info.haveHeal;
-        saveData.healRate = info.healRate;
-        saveData.healSkillTime = info.healSkillTime;
-
-        saveData.haveBarrier = info.haveBarrier;
-        saveData.reduceDamage = info.reduceDamage;
-        saveData.barrierSkillTime = info.barrierSkillTime;
-
-        saveData.haveFireSlash = info.haveFireSlash;
-        saveData.fireSlashDamage = info.fireSlashDamage;
-        saveData.fireSkillTime = info.fireSkillTime;
-
-
-        saveData.healthCost = costInfo.healthCost;
-        saveData.damageCost = costInfo.damageCost;
-        saveData.speedCost = costInfo.speedCost;
-
-        saveData.healCost = costInfo.healCost;
-        saveData.barrierCost = costInfo.barrierCost;
-        saveData.fireSlashCost = costInfo.fireSlashCost;
-
-        saveData.healRateCost = costInfo.healRateCost;
-        saveData.healSkillTimeCost = costInfo.healSkillTimeCost;
-
-        saveData.reduceDamageCost = costInfo.reduceDamageCost;
-        saveData.barrierSkillTimeCost = costInfo.barrierSkillTimeCost;
-
-        saveData.fireSlashDamageCost = costInfo.fireSlashDamageCost;
-        saveData.fireSkillTimeCost = costInfo.fireSkillTimeCost;
-
-        saveData.notNewGame = settingInfo.notNewGame;
-        saveData.HighScore = settingInfo.HighScore;
-
-        saveData.musicSound = settingInfo.musicSound;
-        saveData.ambientSound = settingInfo.ambientSound;
-        saveData.effectSound = settingInfo.effectSound;
+        
     }
 
     public void SaveGame()
     {
-        //BinaryFormatter bf = new BinaryFormatter(); 
-        //FileStream file = File.Create(Application.persistentDataPath + "/MySaveData.dat"); 
         SaveData data = new SaveData();
 
         data.maxHealth = info.maxHealth;
@@ -138,11 +94,6 @@ public class SaveManager : MonoBehaviour
 
         if (loadSave != null)
         {
-            //File.Exists(Application.persistentDataPath + "/MySaveData.dat") //in IF
-            //BinaryFormatter bf = new BinaryFormatter();
-            //FileStream file = File.Open(Application.persistentDataPath + "/MySaveData.dat", FileMode.Open);
-            //SaveData data = (SaveData)bf.Deserialize(file);
-            //file.Close();
 
             info.maxHealth = loadSave.maxHealth;
             info.damage = loadSave.damage;

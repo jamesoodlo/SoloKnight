@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: Info
   m_EditorClassIdentifier: 
   coins: 0
-  pocketCoins: 1441
+  pocketCoins: 0
   maxHealth: 100
   damage: 15
   speed: 5
   swordsSelected: 0
   haveSteelSword: 1
   haveGlorySword: 0
-  haveHeal: 1
+  haveHeal: 0
   healRate: 5
   healSkillTime: 6.5
-  haveBarrier: 1
+  haveBarrier: 0
   reduceDamage: 15
   barrierSkillTime: 6.5
-  haveFireSlash: 1
+  haveFireSlash: 0
   fireSlashDamage: 1
   fireSkillTime: 5
